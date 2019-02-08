@@ -13,7 +13,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.exports
+source ~/.dotfiles/.exports
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
 
