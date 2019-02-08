@@ -1,8 +1,11 @@
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-
 # Install Brew
-echo "Installing Brew"
+echo "Installing xcode Command Line Tools"
 xcode-select --install
+
+echo "Cloning Repo"
+git clone https://github.com/nbd9/dotfiles ~/.dotfiles
+
+echo "Installing Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Brew CLI Programs
