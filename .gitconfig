@@ -1,0 +1,10 @@
+[user]
+	name = Nick DeGroot
+	email = contact@nbdeg.com
+
+[github]
+	user = nbd9
+
+[core]
+	excludesfile = ~/.gitignore
+	editor = code --wait
