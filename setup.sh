@@ -26,7 +26,6 @@ brew install mas
 
 # Install Brew Cask Programs
 echo "Installing Brew Cask Programs"
-brew cask install alfred
 brew cask install font-hack
 brew cask install google-chrome
 brew cask install iterm2
