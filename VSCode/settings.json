@@ -1,0 +1,54 @@
+{
+    "editor.fontFamily": "Hack, 'Input Sans', Menlo, Monaco, 'Courier New', monospace",
+    "workbench.iconTheme": "material-icon-theme",
+    "materialTheme.cache.workbench.settings": {
+        "themeColours": "Default",
+        "accent": "Tomato",
+        "accentPrevious": "Red"
+    },
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#F44336",
+        "list.activeSelectionForeground": "#F44336",
+        "list.inactiveSelectionForeground": "#F44336",
+        "list.highlightForeground": "#F44336",
+        "scrollbarSlider.activeBackground": "#F4433650",
+        "editorSuggestWidget.highlightForeground": "#F44336",
+        "textLink.foreground": "#F44336",
+        "progressBar.background": "#F44336",
+        "pickerGroup.foreground": "#F44336",
+        "tab.activeBorder": "#F44336",
+        "statusBar.background": "#303030",
+        "statusBar.noFolderBackground": "#222225",
+        "statusBar.debuggingBackground": "#511f1f"
+    },
+    "workbench.colorTheme": "Material Theme",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "2018-05-23T15:57:04.663Z",
+    "sync.forceDownload": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "files.exclude": {
+        "**/.git": true, // this is a default value
+        "**/.DS_Store": true // this is a default value 
+    },
+    "workbench.startupEditor": "welcomePage",
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "explorer.confirmDelete": false,
+    "material-icon-theme.showUpdateMessage": false,
+    "extensions.ignoreRecommendations": true,
+    "sync.gist": "e2f6d2a9fabb14f4699f7cd1e4edd6f2",
+    "sync.lastUpload": "",
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "python.pythonPath": "/usr/local/bin/python3"
+}

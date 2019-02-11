@@ -1,93 +1,55 @@
 # Install Brew
-echo "Installing xcode Command Line Tools"
-xcode-select --install
-
-echo "Cloning Repo"
-git clone https://github.com/nbd9/dotfiles ~/.dotfiles
-
 echo "Installing Brew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Brew CLI Programs
-echo "Installing Brew CLI Programs"
-brew install cowsay
-brew install fortune
-brew install lolcat
-
-brew install n
-brew install pyenv
-brew install pipenv
-brew install yarn
-
-brew install zsh
-brew install thefuck
-brew install git-flow
-brew install mas
-
-# Install Brew Cask Programs
-echo "Installing Brew Cask Programs"
-brew cask install font-hack
-brew cask install google-chrome
-brew cask install iterm2
-brew cask install private-internet-access
-brew cask install sketch
-brew cask install spotify
-brew cask install visual-studio-code
-brew cask install slack
+echo "Installing Brew Programs"
+brew bundle
 
 # Yarn global packages
 echo "Installing Yarn Global Programs"
 yarn global add firebase-tools standard
 
-# Set up terminal
-echo "Installing oh-my-zsh and Spaceship Prompt"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-# Install macOS App Store Programs
-echo "Installing macOS App Store Programs"
-mas install 937984704 # Amphetamine
-mas install 441258766 # Magnet
-
 # VSCode Settings Sync Extension
-echo "Installing VSCode Settings Sync"
-code --install-extention Shan.code-settings-sync
+echo "Installing VS Code Settings"
+ln -sF "$HOME/.dotfiles/VSCode/keybindings.json" "$HOME/Library/Application\ Support/Code/User/keybindings.json"
+ln -sF "$HOME/.dotfiles/VSCode/settings.json" "$HOME/Library/Application\ Support/Code/User/settings.json"
+code --install-extension 2gua.rainbow-brackets
+code --install-extension chenxsan.vscode-standardjs
+code --install-extension christian-kohler.path-intellisense
+code --install-extension deerawan.vscode-faker
+code --install-extension EditorConfig.EditorConfig
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-complete-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension James-Yu.latex-workshop
+code --install-extension michelemelluso.gitignore
+code --install-extension ms-python.python
+code --install-extension ms-vscode.node-debug2
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension Orta.vscode-ios-common-files
+code --install-extension PKief.material-icon-theme
+code --install-extension pnp.polacode
+code --install-extension rubbersheep.gi
+code --install-extension shyykoserhiy.vscode-spotify
+code --install-extension vsmobile.vscode-react-native
+code --install-extension yzhang.markdown-all-in-one
 
-echo "Changing Various Annoyances"
-# Disable remote apple events
-sudo systemsetup -setremoteappleevents off
-# Disable remote login
-sudo systemsetup -setremotelogin off
-# Disable wake-on modem
-sudo systemsetup -setwakeonmodem off
-# Disable wake-on LAN
-sudo systemsetup -setwakeonnetworkaccess off
-# Disable guest account login
-sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
-sudo tmutil disablelocal;ok
-# Disable the “Are you sure you want to open this application?” dialog
-defaults write com.apple.LaunchServices LSQuarantine -bool false
-# Good scrolling
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false;ok
-# Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0;ok
-# Show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true;ok
-# Show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true;ok
-# Show status bar
-defaults write com.apple.finder ShowStatusBar -bool true;ok
-# Show path bar
-defaults write com.apple.finder ShowPathbar -bool true;ok
-# Bottom right screen corner → Show desktop
-defaults write com.apple.dock wvous-br-corner -int 4
-defaults write com.apple.dock wvous-br-modifier -int 0;ok
+# Set up terminal
+echo "Setting up Terminal"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iTerm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+# Temp headless fix to install without stopping script execution.
+0>/dev/null "$(curl -fsSL https://raw.githubusercontent.com/leoj3n/oh-my-zsh/leoj3n-oh-my-install/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
+ln -sF "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
 echo "Sym-Linking zshrc and git files"
-ln -sf "~/.dotfiles/.zshrc" ~
-ln -sf "~/.dotfiles/.gitconfig" ~
-ln -sf "~/.dotfiles/.gitignore" ~
+ln -sF "$HOME/.dotfiles/.zshrc" ~
+ln -sF "$HOME/.dotfiles/.gitconfig" ~
+ln -sF "$HOME/.dotfiles/.gitignore" ~
 
 echo "Done! You're good to go."

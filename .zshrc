@@ -4,7 +4,7 @@ ZSH_THEME="spaceship"
 
 plugins=(
   git-flow
-  common-aliases
+  zsh-autosuggestions
   yarn
   pip
   python
