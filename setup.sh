@@ -12,6 +12,7 @@ yarn global add firebase-tools standard
 
 # VSCode Settings Sync Extension
 echo "Installing VS Code Settings"
+mkdir -p "$HOME/Library/Application\ Support/Code/User"
 ln -sF "$HOME/.dotfiles/VSCode/keybindings.json" "$HOME/Library/Application\ Support/Code/User/keybindings.json"
 ln -sF "$HOME/.dotfiles/VSCode/settings.json" "$HOME/Library/Application\ Support/Code/User/settings.json"
 code --install-extension 2gua.rainbow-brackets
