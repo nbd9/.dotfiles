@@ -26,7 +26,6 @@ cask "jetbrains-toolbox"
 cask "private-internet-access"
 cask "sketch"
 cask "spotify"
-cask "steam"
 cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
 mas "Magnet", id: 441258766
