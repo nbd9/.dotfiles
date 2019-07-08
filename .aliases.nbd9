@@ -1,0 +1,6 @@
+alias dkill="docker kill $(docker ps -q)"
+alias gdog="git log --all --decorate --oneline --graph"
+alias amend="git commit --amend --no-edit"
+alias st="yarn start"
+alias dc="docker-compose"
+alias c="code ."

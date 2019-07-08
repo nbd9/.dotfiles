@@ -14,6 +14,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source ~/.dotfiles/.exports
+for f in ~/.dotfiles/.aliases.*; do source $f; done
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
 

@@ -42,6 +42,10 @@ echo "Setting up Terminal"
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dotfiles/iTerm2"
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 
+# Key Repeat Fix
+defaults write -g InitialKeyRepeat -int 10
+defaults write -g KeyRepeat -int 1
+
 # Temp headless fix to install without stopping script execution.
 0>/dev/null "$(curl -fsSL https://raw.githubusercontent.com/leoj3n/oh-my-zsh/leoj3n-oh-my-install/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

@@ -23,7 +23,6 @@ cask "google-chrome"
 cask "iterm2"
 cask "java"
 cask "jetbrains-toolbox"
-cask "private-internet-access"
 cask "sketch"
 cask "spotify"
 cask "visual-studio-code"
@@ -33,6 +32,5 @@ mas "Microsoft Excel", id: 462058435
 mas "Microsoft OneNote", id: 784801555
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
-mas "myHomework", id: 970610831
 mas "Slack", id: 803453959
 mas "Xcode", id: 497799835

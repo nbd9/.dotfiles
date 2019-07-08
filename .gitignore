@@ -6,3 +6,7 @@
 node_modules
 bower_components
 npm-debug.log
+
+# Computer/Company specific aliases.
+.aliases.*
+!.aliases.nbd9
