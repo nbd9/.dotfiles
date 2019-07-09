@@ -10,6 +10,9 @@ brew bundle
 echo "Installing Yarn Global Programs"
 yarn global add firebase-tools standard
 
+# Lolcommits
+gem install lolcommits
+
 # VSCode Settings Sync Extension
 echo "Installing VS Code Settings"
 mkdir -p "$HOME/Library/Application\ Support/Code/User"
@@ -55,6 +58,5 @@ ln -sF "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/th
 echo "Sym-Linking zshrc and git files"
 ln -sF "$HOME/.dotfiles/.zshrc" ~
 ln -sF "$HOME/.dotfiles/.gitconfig" ~
-ln -sF "$HOME/.dotfiles/.gitignore" ~
 
 echo "Done! You're good to go."

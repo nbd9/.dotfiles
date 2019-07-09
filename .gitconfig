@@ -6,5 +6,7 @@
 	user = nbd9
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.dotfiles/.gitignore
 	editor = code --wait
+[init]
+	templatedir = ~/.dotfiles/GitHooks
