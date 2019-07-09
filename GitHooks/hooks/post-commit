@@ -1,5 +1,7 @@
-#!/bin/sh
-
-### lolcommits hook (begin) ###
-LANG="en_US" && PATH="$PATH:/Users/nbdeg/.rvm/rubies/ruby-2.4.4/bin:/usr/local/bin" && if [ ! -d "$GIT_DIR/rebase-merge" ] && [ "$LOLCOMMITS_CAPTURE_DISABLED" != "true" ]; then lolcommits --capture ; fi
-###  lolcommits hook (end)  ###
+#!/usr/bin/env ruby
+file="~/.gitshots/#{Time.now.to_i}.jpg"
+unless File.directory?(File.expand_path("../../rebase-merge", __FILE__))
+  puts "Taking capture into #{file}!"
+  system "imagesnap -q -w 3 #{file} &"
+end
+exit 0

@@ -6,12 +6,12 @@ echo "Installing Brew"
 echo "Installing Brew Programs"
 brew bundle
 
+# Git Shots Dir
+mkdir "$HOME/.gitshots"
+
 # Yarn global packages
 echo "Installing Yarn Global Programs"
 yarn global add firebase-tools standard
-
-# Lolcommits
-gem install lolcommits
 
 # VSCode Settings Sync Extension
 echo "Installing VS Code Settings"
