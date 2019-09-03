@@ -22,23 +22,29 @@ code --install-extension 2gua.rainbow-brackets
 code --install-extension chenxsan.vscode-standardjs
 code --install-extension christian-kohler.path-intellisense
 code --install-extension deerawan.vscode-faker
+code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
 code --install-extension Equinusocio.vsc-material-theme
 code --install-extension formulahendry.auto-close-tag
 code --install-extension formulahendry.auto-complete-tag
 code --install-extension formulahendry.auto-rename-tag
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension James-Yu.latex-workshop
 code --install-extension michelemelluso.gitignore
 code --install-extension ms-python.python
 code --install-extension ms-vscode.node-debug2
 code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension msjsdiag.vscode-react-native
+code --install-extension nbdeg.vscode-gmusic
 code --install-extension Orta.vscode-ios-common-files
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
+code --install-extension redhat.vscode-xml
 code --install-extension rubbersheep.gi
 code --install-extension shyykoserhiy.vscode-spotify
-code --install-extension vsmobile.vscode-react-native
+code --install-extension WakaTime.vscode-wakatime
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension zxh404.vscode-proto3
 
 # Set up terminal
 echo "Setting up Terminal"
