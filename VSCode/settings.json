@@ -50,5 +50,6 @@
     "sync.removeExtensions": true,
     "sync.syncExtensions": true,
     "javascript.implicitProjectConfig.experimentalDecorators": true,
-    "python.pythonPath": "/usr/local/bin/python3"
+    "python.pythonPath": "/usr/local/bin/python3",
+    "latex-workshop.view.pdf.viewer": "tab"
 }

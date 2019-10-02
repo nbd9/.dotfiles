@@ -35,7 +35,6 @@ code --install-extension ms-python.python
 code --install-extension ms-vscode.node-debug2
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension msjsdiag.vscode-react-native
-code --install-extension nbdeg.vscode-gmusic
 code --install-extension Orta.vscode-ios-common-files
 code --install-extension PKief.material-icon-theme
 code --install-extension pnp.polacode
