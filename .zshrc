@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/nbdeg/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="spaceship"
 
 SPACESHIP_TIME_SHOW=true
@@ -21,13 +21,7 @@ SPACESHIP_PROMPT_ORDER=(
 
 
 plugins=(
-  git-flow
   zsh-autosuggestions
-  yarn
-  pip
-  python
-  sudo
-  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
