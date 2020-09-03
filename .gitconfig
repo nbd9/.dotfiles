@@ -1,12 +1,16 @@
 [user]
 	name = Nick DeGroot
 	email = 1966472+nickthegroot@users.noreply.github.com
-
 [github]
-	user = nbd9
+	user = nickthegroot
 
 [core]
 	excludesfile = ~/.dotfiles/.gitignore
 	editor = code --wait
 [init]
 	templatedir = ~/.dotfiles/GitHooks
+
+[pull]
+	rebase = true
+[push]
+	default = upstream

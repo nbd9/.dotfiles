@@ -1,45 +1,59 @@
+tap "bufbuild/buf"
+tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
-brew "asciinema"
+tap "mike-engel/jwt-cli"
+cask "adoptopenjdk8"
+brew "autoconf"
+brew "automake"
+brew "awscli"
+brew "ccat"
+brew "coreutils"
 brew "cowsay"
+brew "ffmpeg"
 brew "fortune"
-brew "httpie"
+brew "gh"
+brew "httpie", link: false
 brew "imagemagick"
 brew "imagesnap"
+brew "lazydocker"
 brew "lolcat"
 brew "mas"
 brew "n"
-brew "ruby"
+brew "pyenv"
 brew "speedtest-cli"
 brew "thefuck"
 brew "watchman"
 brew "yarn"
+brew "youtube-dl"
+brew "bufbuild/buf/buf"
+brew "mike-engel/jwt-cli/jwt-cli"
 cask "1password"
-cask "avast-security"
-cask "discord"
+cask "anki"
+cask "docker"
 cask "font-hack"
-cask "font-ibm-plex"
+cask "font-jetbrains-mono"
 cask "font-source-sans-pro"
 cask "gitify"
-cask "google-backup-and-sync"
+cask "gitkraken"
 cask "google-chrome"
 cask "iterm2"
 cask "java"
 cask "jetbrains-toolbox"
-cask "sketch"
+cask "ngrok"
+cask "notion"
+cask "postman"
 cask "spotify"
-cask "steam"
 cask "visual-studio-code"
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.crowdcafe.windowmagnet", id: 441258766
-mas "com.gingerlabs.NotabilityMac", id: 736189492
-mas "com.if.Amphetamine", id: 937984704
-mas "com.microsoft.Excel", id: 462058435
-mas "com.microsoft.onenote.mac", id: 784801555
-mas "com.microsoft.Powerpoint", id: 462062816
-mas "com.microsoft.Word", id: 462054704
-mas "com.tinyspeck.slackmacgap", id: 803453959
-mas "com.todoist.mac.Todoist", id: 585829637
+mas "Amphetamine", id: 937984704
+mas "Magnet", id: 441258766
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Notability", id: 736189492
+mas "Slack", id: 803453959
+mas "Xcode", id: 497799835

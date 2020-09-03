@@ -22,6 +22,7 @@ SPACESHIP_PROMPT_ORDER=(
 
 plugins=(
   zsh-autosuggestions
+  dotenv
 )
 
 source $ZSH/oh-my-zsh.sh

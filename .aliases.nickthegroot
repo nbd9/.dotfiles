@@ -1,4 +1,3 @@
-alias gdog="git log --all --decorate --oneline --graph"
 alias amend="git commit --amend --no-edit"
 alias st="yarn start"
 alias c="code ."

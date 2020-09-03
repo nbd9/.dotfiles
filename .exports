@@ -13,4 +13,3 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 export ANDROID_HOME="$HOME/Library/Android/sdk"
-export PATH="$ANDROID_HOME/platform-tools:$PATH:$HOME/.rvm/bin"
