@@ -6,6 +6,8 @@
 node_modules
 bower_components
 npm-debug.log
+__pycache__
+.pytest_cache
 
 # Computer/Company specific aliases.
 .aliases.*

@@ -1,9 +1,9 @@
-# @nbd9's Dotfiles
+# My Dotfiles
 For use on a clean install of macOS.
 
 ## Getting Set Up
 ```sh
-git clone https://github.com/nbd9/dotfiles ~/.dotfiles
+git clone https://github.com/nickthegroot/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 ./setup.sh
 ```
