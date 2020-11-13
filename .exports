@@ -5,4 +5,5 @@ export EDITOR='code'
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+export STARSHIP_CONFIG="$HOME/.dotfiles/starship.toml"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
