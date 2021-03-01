@@ -7,3 +7,6 @@ export LANG="en_US"
 
 export STARSHIP_CONFIG="$HOME/.dotfiles/starship.toml"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
+export GOPATH="$HOME/Library/Go"
+
+export PATH="$HOME/.rvm/bin:/usr/local/anaconda3/bin:$ANDROID_HOME/platform-tools:$PATH"

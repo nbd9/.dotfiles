@@ -1,74 +1,16 @@
 {
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "'JetBrains Mono', Hack, monospace",
-    "editor.fontLigatures": true,
-    "search.exclude": {
-        "**/dist": true,
-        "**/lib": true
-    },
-    "[yaml]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "window.zoomLevel": 0,
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "python.showStartPage": false,
-    "python.pythonPath": "/usr/local/anaconda3/bin/python",
-
-    // Used in DSC 80
-    "python.testing.pytestArgs": [
-        "--doctest-modules", 
-        "--doctest-report", "ndiff",
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.nosetestsEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "cSpell.enabled": true,
-    "cSpell.enableFiletypes": [
-        "proto3"
-    ],
-    "cSpell.userWords": [
-        "Creds",
-        "Intrinsics",
-        "Streem",
-        "WIFI",
-        "classname",
-        "coord",
-        "deinit",
-        "endregion",
-        "geocode",
-        "oneof",
-        "proto",
-        "protobuf",
-        "streemshot",
-        "twilio"
-    ],
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "yaml.schemas": {
-        "file:///Users/nbdeg/.vscode/extensions/atlassian.atlascode-2.8.4/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-    },
-    "atlascode.jira.enabled": true,
-    "atlascode.bitbucket.enabled": false,
-    "atlascode.jira.jqlList": [
-        {
-            "id": "576c62af-7141-45d9-a782-664ed648d2f5",
-            "enabled": true,
-            "name": "My streempro Issues",
-            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
-            "siteId": "8257e897-87f2-4e86-bfd9-3b614df78958",
-            "monitor": true
-        }
-    ],
-    "jupyter.alwaysTrustNotebooks": true,
-    "jupyter.askForKernelRestart": false,
+  "cSpell.enabled": true,
+  "cSpell.enableFiletypes": ["proto3"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'JetBrains Mono', Hack, monospace",
+  "editor.fontLigatures": true,
+  "go.useLanguageServer": true,
+  "python.languageServer": "Pylance",
+  "python.showStartPage": false,
+  "search.exclude": {
+    "**/dist": true,
+    "**/lib": true
+  },
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons"
 }

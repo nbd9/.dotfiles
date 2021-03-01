@@ -3,7 +3,10 @@ ln -sF "$HOME/.dotfiles/fish" "$HOME/.config"
 
 echo "Sym-Linking Git Files"
 mkdir "$HOME/.gitshots"
-ln -sF "$HOME/.dotfiles/.gitconfig" ~
+ln -sF "$HOME/.dotfiles/.gitconfig" "$HOME"
+
+echo "Sym-Linking Conda Files"
+ln -sF "$HOME/.dotfiles/.condarc" "$HOME"
 
 # Install Brew
 echo "Installing Brew"
