@@ -1,7 +1,18 @@
 #!/usr/bin/env ruby
 file="~/.gitshots/#{Time.now.to_i}.jpg"
+
+devices = `imagesnap -l`
+device = devices.split(/=> [.]*/)[-1].strip
+
+if device.include?('(Built-in)')
+  lid_closed = `ioreg -r -k AppleClamshellState -d 4 | grep AppleClamshellState  | head -1`.strip.end_with?('Yes')
+  if lid_closed
+    exit 0
+  end
+end
+
 unless File.directory?(File.expand_path("../../rebase-merge", __FILE__))
   puts "Taking capture into #{file}!"
-  system "imagesnap -q -w 3 #{file} &"
+  system "imagesnap -q -d \"#{device}\" -w 3 #{file} &"
 end
 exit 0

@@ -12,5 +12,12 @@
     "**/lib": true
   },
   "workbench.colorTheme": "Material Theme Darker High Contrast",
-  "workbench.iconTheme": "eq-material-theme-icons"
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "jupyter.askForKernelRestart": false,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }

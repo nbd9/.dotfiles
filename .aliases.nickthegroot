@@ -1,4 +1,5 @@
 alias amend="git commit --amend --no-edit"
+alias amendp="amend && git push --force-with-lease"
 alias st="yarn start"
 alias c="code ."
 alias l="ls -la"
