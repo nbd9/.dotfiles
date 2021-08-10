@@ -12,3 +12,6 @@ __pycache__
 # Computer/Company specific aliases.
 .aliases.*
 !.aliases.nickthegroot
+
+# Computer/Company specific exports
+.exports.*

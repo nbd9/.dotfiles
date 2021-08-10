@@ -5,12 +5,9 @@ echo "Sym-Linking Git Files"
 mkdir "$HOME/.gitshots"
 ln -sF "$HOME/.dotfiles/.gitconfig" "$HOME"
 
-echo "Sym-Linking Conda Files"
-ln -sF "$HOME/.dotfiles/.condarc" "$HOME"
-
 # Install Brew
 echo "Installing Brew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install Brew CLI Programs
 echo "Installing Brew Programs"
