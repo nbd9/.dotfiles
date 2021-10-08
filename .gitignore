@@ -15,3 +15,6 @@ __pycache__
 
 # Computer/Company specific exports
 .exports.*
+
+fish/
+!fish/config.fish

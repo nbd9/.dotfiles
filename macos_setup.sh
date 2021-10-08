@@ -1,5 +1,16 @@
 echo "Sym-Linking Fish Files"
+mkdir "$HOME/.config"
 ln -sF "$HOME/.dotfiles/fish" "$HOME/.config"
+
+echo "Installing asdf and versions"
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.1
+ln -sF "$HOME/.dotfiles/.tool-versions" "$HOME"
+
+echo "Installing Fisher and Plugins"
+curl -sL https://git.io/fisher | source
+fisher install jorgebucaran/fisher
+fisher install jethrokuan/z
+fisher install jorgebucaran/nvm.fish
 
 echo "Sym-Linking Git Files"
 mkdir "$HOME/.gitshots"
@@ -28,3 +39,5 @@ defaults write -g InitialKeyRepeat -int 10
 defaults write -g KeyRepeat -int 2
 
 echo "Done! You're good to go."
+
+# fisher install IlanCosman/tide@v5

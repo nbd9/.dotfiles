@@ -1,18 +1,28 @@
 [user]
 	name = Nick DeGroot
 	email = 1966472+nickthegroot@users.noreply.github.com
+
 [github]
 	user = nickthegroot
+
+[credential "https://github.com"]
+	helper = !/usr/bin/gh auth git-credential
+
 [core]
 	excludesfile = ~/.dotfiles/.gitignore
 	editor = code --wait
 	pager = delta
+
 [init]
 	templatedir = ~/.dotfiles/GitHooks
+	defaultBranch = main
+
 [pull]
 	rebase = true
+
 [push]
 	default = current
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
