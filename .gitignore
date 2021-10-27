@@ -11,10 +11,11 @@ __pycache__
 
 # Computer/Company specific aliases.
 .aliases.*
-!.aliases.nickthegroot
+!.aliases.default
 
 # Computer/Company specific exports
 .exports.*
+!.exports.default
 
-fish/
+fish/**
 !fish/config.fish
