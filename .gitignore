@@ -19,3 +19,5 @@ __pycache__
 
 fish/**
 !fish/config.fish
+
+.ipynb_checkpoints
