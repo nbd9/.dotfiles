@@ -1,0 +1,7 @@
+# Load Scripting Additions
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# ===== General =================================
+yabai -m config layout                       bsp
+yabai -m config external_bar                 all:22:0
