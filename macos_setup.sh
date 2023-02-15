@@ -33,6 +33,9 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dot
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 
+echo "Setting up Ubsersicht"
+ln -sF "$HOME/.dotfiles/ubsersicht-widgets" "$HOME/Library/Application Support/Übersicht/widgets"
+
 echo "Done!"
 echo "Next, restart your terminal and configure fish shell:"
 echo "curl -sL https://git.io/fisher | source"
