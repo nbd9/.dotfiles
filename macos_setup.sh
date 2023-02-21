@@ -35,6 +35,7 @@ curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utili
 
 echo "Setting up Ubsersicht"
 ln -sF "$HOME/.dotfiles/ubsersicht-widgets" "$HOME/Library/Application Support/Übersicht/widgets"
+ln -sF "$HOME/.dotfiles/.simplebarrc" "$HOME"
 
 echo "Done!"
 echo "Next, restart your terminal and configure fish shell:"

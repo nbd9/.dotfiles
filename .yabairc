@@ -4,4 +4,4 @@ sudo yabai --load-sa
 
 # ===== General =================================
 yabai -m config layout                       bsp
-yabai -m config external_bar                 all:22:0
+yabai -m config external_bar                 all:36:0
