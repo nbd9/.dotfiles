@@ -5,3 +5,6 @@ sudo yabai --load-sa
 # ===== General =================================
 yabai -m config layout                       bsp
 yabai -m config external_bar                 all:36:0
+
+# Refresh simple-bar
+osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-index-jsx\""

@@ -1,8 +1,8 @@
 # Setup brew
-eval (/opt/homebrew/bin/brew shellenv)
+/opt/homebrew/bin/brew shellenv | source
 
-# Setup ASDF
-source /opt/homebrew/opt/asdf/libexec/asdf.fish
+# Setup RTX
+/opt/homebrew/bin/rtx activate fish | source
 
 # Setup iTerm
 source $HOME/.iterm2_shell_integration.fish

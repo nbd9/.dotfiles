@@ -2,8 +2,7 @@
 alt - return : open -a "iTerm"
 alt + shift - return : open -a "Visual Studio Code"
 
-alt + shift - p : open -n -a "Google Chrome" --args --profile-directory="Default"
-alt + shift - s : open -n -a "Google Chrome" --args --profile-directory="Profile 1"
+alt + shift - space : open -a "Arc"
 alt + shift - m : open -a "Music"
 
 # swap window
