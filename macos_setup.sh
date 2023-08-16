@@ -33,6 +33,10 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "$HOME/.dot
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 
+echo "Setting up Yabai / SKHD"
+ln -sF "$HOME/.dotfiles/.skhdrc" "$HOME"
+ln -sF "$HOME/.dotfiles/.yabairc" "$HOME"
+
 echo "Setting up Ubsersicht"
 ln -sF "$HOME/.dotfiles/ubsersicht-widgets" "$HOME/Library/Application Support/Übersicht/widgets"
 ln -sF "$HOME/.dotfiles/.simplebarrc" "$HOME"

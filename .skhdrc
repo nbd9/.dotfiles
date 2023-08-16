@@ -4,6 +4,9 @@ alt + shift - return : open -a "Visual Studio Code"
 
 alt + shift - space : open -a "Arc"
 alt + shift - m : open -a "Music"
+alt + shift - s : open -a "Slack"
+alt + shift - n : open -a "Notion"
+alt + shift - c : open -a "Cron"
 
 # swap window
 ctrl + alt - left : yabai -m window --swap west

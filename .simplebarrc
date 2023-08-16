@@ -71,7 +71,7 @@
   "batteryWidgetOptions": {
     "refreshFrequency": 10000,
     "toggleCaffeinateOnClick": true,
-    "caffeinateOption": ""
+    "caffeinateOption": "-d -t 3600"
   },
   "networkWidgetOptions": {
     "refreshFrequency": 20000,
