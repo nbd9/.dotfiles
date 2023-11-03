@@ -1,12 +1,22 @@
 [user]
 	name = Nick DeGroot
 	email = 1966472+nickthegroot@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDQiodjunhvMZl0GRixXNkML0iFZsXgax3PjmVLV+0AJ
 
 [github]
 	user = nickthegroot
 
 [credential "https://github.com"]
 	helper = !gh auth git-credential
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+  gpgsign = true
 
 [core]
 	excludesfile = ~/.dotfiles/.gitignore

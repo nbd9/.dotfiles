@@ -689,19 +689,27 @@
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x19-0x60000</key>
+		<key>0x19-0x60000-0x30</key>
 		<dict>
 			<key>Action</key>
-			<integer>39</integer>
+			<integer>31</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
-		<key>0x9-0x40000</key>
+		<key>0x9-0x40000-0x30</key>
 		<dict>
 			<key>Action</key>
-			<integer>32</integer>
+			<integer>30</integer>
+			<key>Label</key>
+			<string></string>
 			<key>Text</key>
 			<string></string>
+			<key>Version</key>
+			<integer>1</integer>
 		</dict>
 		<key>0xf702-0x320000</key>
 		<dict>
