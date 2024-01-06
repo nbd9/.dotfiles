@@ -1,8 +1,8 @@
 # Setup brew
 /opt/homebrew/bin/brew shellenv | source
 
-# Setup RTX
-/opt/homebrew/bin/rtx activate fish | source
+# Setup mise
+/opt/homebrew/bin/mise activate fish | source
 
 # Setup iTerm
 source $HOME/.iterm2_shell_integration.fish

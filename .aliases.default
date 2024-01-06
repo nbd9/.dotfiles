@@ -1,6 +1,7 @@
 alias amend="git commit --amend --no-edit"
 alias amendp="amend && git push --force-with-lease"
 alias c="code ."
+alias gbranch="git rev-parse --abbrev-ref HEAD"
 alias gtop="cd (git rev-parse --show-toplevel)"
 alias dc="docker compose"
 alias gha="gh workflow run --ref (git rev-parse --abbrev-ref HEAD)" 

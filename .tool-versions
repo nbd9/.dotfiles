@@ -1,5 +1,4 @@
-yarn    1.22
-node    18
-poetry  1.6.1
-haskell 9.6
-python  3.11
+yarn   1.22.19
+node   20
+poetry latest
+python 3.11

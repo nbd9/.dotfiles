@@ -686,7 +686,9 @@
 	<key>Default Bookmark Guid</key>
 	<string>01C7D116-D35C-4D91-8A2E-5DB10482FCE2</string>
 	<key>DimInactiveSplitPanes</key>
-	<false/>
+	<true/>
+	<key>DimOnlyText</key>
+	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000-0x30</key>
@@ -1823,6 +1825,8 @@
 	<true/>
 	<key>SoundForEsc</key>
 	<false/>
+	<key>SplitPaneDimmingAmount</key>
+	<real>0.40000000000000002</real>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabStyleWithAutomaticOption</key>
