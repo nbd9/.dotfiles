@@ -9,6 +9,9 @@
 [credential "https://github.com"]
 	helper = !gh auth git-credential
 
+[includeIf "hasconfig:remote.*.url:https://huggingface.co/**"]
+	path = ~/.dotfiles/.gitconfig-huggingface
+
 [gpg]
   format = ssh
 

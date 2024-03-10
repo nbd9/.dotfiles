@@ -6,7 +6,7 @@ alt + shift - space : open -a "Arc"
 alt + shift - m : open -a "Music"
 alt + shift - s : open -a "Slack"
 alt + shift - n : open -a "Notion"
-alt + shift - c : open -a "Cron"
+alt + shift - c : open -a "Notion Calendar"
 alt + shift - l : open -a "Linear"
 alt + shift - x : open -a "Xcode"
 

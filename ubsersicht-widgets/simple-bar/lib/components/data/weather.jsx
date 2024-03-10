@@ -1,10 +1,10 @@
 import * as Uebersicht from "uebersicht";
-import * as DataWidget from "./data-widget.jsx";
-import * as DataWidgetLoader from "./data-widget-loader.jsx";
-import * as Icons from "../icons.jsx";
-import * as Utils from "../../utils";
-import * as Settings from "../../settings";
 import useWidgetRefresh from "../../hooks/use-widget-refresh";
+import * as Settings from "../../settings";
+import * as Utils from "../../utils";
+import * as Icons from "../icons.jsx";
+import * as DataWidgetLoader from "./data-widget-loader.jsx";
+import * as DataWidget from "./data-widget.jsx";
 
 export { weatherStyles as styles } from "../../styles/components/data/weather";
 
@@ -52,7 +52,7 @@ export const Widget = () => {
     if (!location) {
       const position = await Promise.race([getPosition(), Utils.timeout(5000)]);
       if (!position) await getWeather();
-      location = position?.address?.city;
+      location = position?.address?.zip;
       if (!location) return setLoading(false);
     }
     try {
