@@ -1,0 +1,3 @@
+[submodule "ubsersicht-widgets/simple-bar"]
+	path = ubsersicht-widgets/simple-bar
+	url = https://github.com/Jean-Tinland/simple-bar

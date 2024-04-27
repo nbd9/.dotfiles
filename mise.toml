@@ -1,0 +1,7 @@
+[tools]
+yarn = '1.22.19'
+node = '20'
+poetry = 'latest'
+python = '3.11'
+usage = 'latest'
+pnpm = "latest"
