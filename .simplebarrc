@@ -68,9 +68,9 @@
     "spotifyWidget": false,
     "cryptoWidget": false,
     "stockWidget": false,
-    "musicWidget": true,
+    "musicWidget": false,
     "mpdWidget": false,
-    "browserTrackWidget": false,
+    "browserTrackWidget": true,
     "dndWidget": false
   },
   "weatherWidgetOptions": {

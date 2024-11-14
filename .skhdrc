@@ -1,57 +1,54 @@
-# open apps
-alt - return : open -a "iTerm"
-alt + shift - return : open -a "Visual Studio Code"
+# Modified from https://github.com/peppy/dotfiles/blob/master/dot_skhdrc
 
-alt + shift - space : open -a "Arc"
-alt + shift - m : open -a "Music"
-alt + shift - s : open -a "Slack"
-alt + shift - n : open -a "Notion"
-alt + shift - c : open -a "Notion Calendar"
-alt + shift - l : open -a "Linear"
-alt + shift - x : open -a "Xcode"
+# space management
+meh - tab: yabai -m space --focus recent
+
+# window management
+alt - e: yabai -m window --toggle split
+alt - r: yabai -m space --rotate 90
+alt - t: yabai -m window --toggle float
+
+alt - d: yabai -m window --toggle zoom-parent
+alt - f: yabai -m window --toggle zoom-fullscreen
+
+# focus window
+alt - h: yabai -m window --focus west || yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+alt - j: yabai -m window --focus south
+alt - k: yabai -m window --focus north
+alt - l: yabai -m window --focus east || yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 # swap window
-ctrl + alt - left : yabai -m window --swap west
-ctrl + alt - down : yabai -m window --swap south
-ctrl + alt - up : yabai -m window --swap north
-ctrl + alt - right : yabai -m window --swap east
+alt + shift - h: yabai -m window --swap west
+alt + shift - j: yabai -m window --swap south
+alt + shift - k: yabai -m window --swap north
+alt + shift - l: yabai -m window --swap east
 
-# create desktop
-alt - n: yabai -m space --create
+# move window
+alt + ctrl - h: yabai -m window --warp west
+alt + ctrl - j: yabai -m window --warp south
+alt + ctrl - k: yabai -m window --warp north
+alt + ctrl - l: yabai -m window --warp east
 
-# destroy desktop
-alt - w: yabai -m space --destroy
+# move window to space
+shift + ctrl - 1: yabai -m window --space 1 --focus
+shift + ctrl - 2: yabai -m window --space 2 --focus
+shift + ctrl - 3: yabai -m window --space 3 --focus
+shift + ctrl - 4: yabai -m window --space 4 --focus
+shift + ctrl - 5: yabai -m window --space 5 --focus
+shift + ctrl - 6: yabai -m window --space 6 --focus
+shift + ctrl - 7: yabai -m window --space 7 --focus
+shift + ctrl - 8: yabai -m window --space 8 --focus
+shift + ctrl - 9: yabai -m window --space 9 --focus
+shift + ctrl - 0: yabai -m window --space 0 --focus
 
-# fast focus desktop
-# alt - 1 : yabai -m space --focus 1
-# alt - 2 : yabai -m space --focus 2
-# alt - 3 : yabai -m space --focus 3
-# alt - 4 : yabai -m space --focus 4
-# alt - 5 : yabai -m space --focus 5
-# alt - 6 : yabai -m space --focus 6
-# alt - 7 : yabai -m space --focus 7
-# alt - 8 : yabai -m space --focus 8
-# alt - 9 : yabai -m space --focus 9
-# alt - 0 : yabai -m space --focus 10
-
-# send window to desktop and follow focus
-shift + ctrl - 1 : yabai -m window --space 1 --focus
-shift + ctrl - 2 : yabai -m window --space 2 --focus
-shift + ctrl - 3 : yabai -m window --space 3 --focus
-shift + ctrl - 4 : yabai -m window --space 4 --focus
-shift + ctrl - 5 : yabai -m window --space 5 --focus
-shift + ctrl - 6 : yabai -m window --space 6 --focus
-shift + ctrl - 7 : yabai -m window --space 7 --focus
-shift + ctrl - 8 : yabai -m window --space 8 --focus
-shift + ctrl - 9 : yabai -m window --space 9 --focus
-shift + ctrl - 0 : yabai -m window --space 0 --focus
-
-# focus monitor
-ctrl + alt - 1  : yabai -m display --focus 1
-ctrl + alt - 2  : yabai -m display --focus 2
-ctrl + alt - 3  : yabai -m display --focus 3
-
-# send window to monitor and follow focus
-shift + ctrl + alt - 1  : yabai -m window --display 1; yabai -m display --focus 1
-shift + ctrl + alt - 2  : yabai -m window --display 2; yabai -m display --focus 2
-shift + ctrl + alt - 3  : yabai -m window --display 3; yabai -m display --focus 3
+# common apps
+alt - return: open -a "iTerm"
+meh - return: open -a "Visual Studio Code"
+meh - space: open -a "Arc"
+meh - m: open -a "YouTube Music"
+meh - s: open -a "Slack"
+meh - n: open -a "Notion"
+meh - c: open -a "Notion Calendar"
+meh - l: open -a "Linear"
+meh - x: open -a "Xcode"
+meh - a: yabai -m window --focus (yabai -m query --windows |jq '.[] | select (.app  == "Around") | .id');

@@ -1,5 +1,6 @@
 # Setup brew libraries
-source (brew --prefix)/share/fish/config.fish
+eval (/opt/homebrew/bin/brew shellenv fish)
+source /opt/homebrew/share/fish/config.fish
 
 # Setup iTerm
 source $HOME/.iterm2_shell_integration.fish
