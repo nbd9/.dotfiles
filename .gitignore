@@ -1,13 +1,9 @@
+# Default cruft
 *~
 ._*
 .DS_Store
 .idea
 .vscode
-node_modules
-bower_components
-npm-debug.log
-__pycache__
-.pytest_cache
 
 # Computer/Company specific aliases.
 .aliases.*
@@ -17,8 +13,5 @@ __pycache__
 .exports.*
 !.exports.default
 
-fish/**
-!fish/config.fish
-!fish/fish_plugins
-
-.ipynb_checkpoints
+# Brew locks
+Brewfile.lock.json

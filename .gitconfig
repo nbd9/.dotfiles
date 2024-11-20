@@ -27,7 +27,6 @@
 	pager = delta
 
 [init]
-	templatedir = ~/.dotfiles/GitHooks
 	defaultBranch = main
 
 [pull]

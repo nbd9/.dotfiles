@@ -5,6 +5,7 @@
     "noBarBg": true,
     "noColorInData": false,
     "bottomBar": false,
+    "sideDecoration": false,
     "inlineSpacesOptions": false,
     "disableNotifications": false,
     "compactMode": true,
@@ -15,6 +16,7 @@
     "fontSize": "11px",
     "yabaiPath": "/opt/homebrew/bin/yabai",
     "shell": "bash",
+    "terminal": "iTerm2",
     "slidingAnimationPace": 4,
     "externalConfigFile": true,
     "enableServer": false,
@@ -22,8 +24,8 @@
     "yabaiServerRefresh": false
   },
   "themes": {
-    "lightTheme": "NightShiftLight",
-    "darkTheme": "MaterialOcean"
+    "lightTheme": "CatppuccinLatte",
+    "darkTheme": "CatppuccinMocha"
   },
   "process": {
     "showOnDisplay": "",
@@ -70,7 +72,7 @@
     "stockWidget": false,
     "musicWidget": false,
     "mpdWidget": false,
-    "browserTrackWidget": true,
+    "browserTrackWidget": false,
     "dndWidget": false
   },
   "weatherWidgetOptions": {
@@ -89,7 +91,8 @@
   "cpuWidgetOptions": {
     "refreshFrequency": 2000,
     "showOnDisplay": "",
-    "displayAsGraph": false
+    "displayAsGraph": false,
+    "cpuMonitorApp": "Top"
   },
   "batteryWidgetOptions": {
     "refreshFrequency": 10000,
