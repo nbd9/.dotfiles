@@ -1,3 +1,6 @@
+# vi mode
+fish_vi_key_bindings
+
 # Setup brew libraries
 eval (/opt/homebrew/bin/brew shellenv fish)
 source /opt/homebrew/share/fish/config.fish

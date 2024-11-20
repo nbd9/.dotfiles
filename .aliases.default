@@ -1,10 +1,23 @@
+alias c="code ."
+alias dc="docker compose"
+alias localip="ipconfig getifaddr en0"
+
+# Git
 alias amend="git commit --amend --no-edit"
 alias amendp="amend && git push --force-with-lease"
-alias c="code ."
+alias gtop="cd (git rev-parse --show-toplevel)"
+alias grec='git reflog | egrep -io "moving from ([^[:space:]]+)" | awk \'{ print $3 }\' | awk \' !x[$0]++\' | egrep -v \'^[a-f0-9]{40}$\' | head -n10'
 alias gbranch="git rev-parse --abbrev-ref HEAD"
 alias gbranchc="gbranch | pbcopy"
-alias gtop="cd (git rev-parse --show-toplevel)"
-alias dc="docker compose"
+alias gst="git status"
+alias gco="git checkout"
+alias gcb="git checkout -b"
+alias gcm="git commit -m"
+alias gaa="git add -A"
+alias gd="git diff"
+alias gdc="git diff --cached"
+
+# GitHub
+alias ghc="gh pr checkout"
+alias ghp="gh pr create"
 alias gha="gh workflow run --ref (git rev-parse --abbrev-ref HEAD)" 
-alias localip="ipconfig getifaddr en0"
-alias grec='git reflog | egrep -io "moving from ([^[:space:]]+)" | awk \'{ print $3 }\' | awk \' !x[$0]++\' | egrep -v \'^[a-f0-9]{40}$\' | head -n10'
