@@ -10,6 +10,7 @@ alias grec='git reflog | egrep -io "moving from ([^[:space:]]+)" | awk \'{ print
 alias gbranch="git rev-parse --abbrev-ref HEAD"
 alias gbranchc="gbranch | pbcopy"
 alias gst="git status"
+alias gl="git log"
 alias gco="git checkout"
 alias gcb="git checkout -b"
 alias gcm="git commit -m"
