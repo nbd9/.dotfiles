@@ -1,25 +1,65 @@
 return {
   {
     "stevearc/conform.nvim",
-    -- event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre",
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
+  "neovim/nvim-lspconfig",
+
   {
-    "neovim/nvim-lspconfig",
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    event = "User FilePost",
     config = function()
       require "configs.lspconfig"
     end,
   },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      auto_install = true,
+      ensure_installed = {
+        "vim",
+        "lua",
+        "html",
+        "css",
+        "tsx",
+        "typescript",
+        "javascript",
+        "python",
+        "sql",
+        "json",
+        "graphql",
+      },
+    },
+  },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      defaults = {
+        file_ignore_patterns = { "^.git/" },
+      },
+      pickers = {
+        find_files = {
+          hidden = true,
+        },
+        live_grep = {
+          additional_args = function(_)
+            return { "--hidden" }
+          end,
+        },
+        oldfiles = {
+          cwd_only = true,
+        },
+      },
+    },
+  },
+
+  {
+    "github/copilot.vim",
+    event = "InsertEnter",
+  },
 }

@@ -1,6 +1,9 @@
 require "nvchad.options"
 
--- add yours here!
+local o = vim.o
+o.relativenumber = true
 
--- local o = vim.o
--- o.cursorlineopt ='both' -- to enable cursorline!
+o.hlsearch = false
+o.incsearch = true
+
+o.scrolloff = 8
