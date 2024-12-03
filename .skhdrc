@@ -51,4 +51,5 @@ meh - n: open -a "Notion"
 meh - c: open -a "Notion Calendar"
 meh - l: open -a "Linear"
 meh - x: open -a "Xcode"
+meh - o: open -a "Obsidian"
 meh - a: yabai -m window --focus (yabai -m query --windows |jq '.[] | select (.app  == "Around") | .id');
