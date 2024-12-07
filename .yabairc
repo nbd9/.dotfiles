@@ -21,32 +21,22 @@ yabai -m config window_animation_duration    0.0
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  8
-yabai -m config bottom_padding               8
-yabai -m config left_padding                 8
-yabai -m config right_padding                8
-yabai -m config window_gap                   8
-yabai -m config external_bar                 all:32:0
+yabai -m config top_padding                  4
+yabai -m config bottom_padding               4
+yabai -m config left_padding                 4
+yabai -m config right_padding                4
+yabai -m config window_gap                   4
+# yabai -m config external_bar                 all:32:0
 
 # spaces
 
-# (1) Web Browsing
 yabai -m rule --add app="Google Chrome" space=^1
 yabai -m rule --add app="Arc" space=^1
-yabai -m space 1 --label Web
 
-# (2) IDEs
 yabai -m rule --add app="Code" space=^2
-yabai -m space 2 --label IDEs
 
-# (9) "Burger King Foot Lettuce" aka Music
 yabai -m rule --add app="YouTube Music" space=9
-yabai -m space 9 --label Music
 
 # Unmanaged
 yabai -m rule --add app="^System Preferences$"      manage=off border=off
 yabai -m rule --add app="^Loom$"                    manage=off border=off
-
-
-# Refresh simple-bar
-osascript -e "tell application id \"tracesOf.Uebersicht\" to refresh widget id \"simple-bar-index-jsx\""

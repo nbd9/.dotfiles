@@ -42,8 +42,7 @@ shift + ctrl - 9: yabai -m window --space 9 --focus
 shift + ctrl - 0: yabai -m window --space 0 --focus
 
 # common apps
-alt - return: open -a "iTerm"
-meh - return: open -a "Visual Studio Code"
+alt - return: open -a "Kitty"
 meh - space: open -a "Arc"
 meh - m: open -a "YouTube Music"
 meh - s: open -a "Slack"

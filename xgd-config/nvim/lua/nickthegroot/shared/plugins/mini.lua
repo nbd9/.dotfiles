@@ -11,6 +11,8 @@ return {
         custom_textobjects = {
           F = treesitter_spec { a = '@function.outer', i = '@function.inner' },
           C = treesitter_spec { a = '@class.outer', i = '@class.inner' },
+          A = treesitter_spec { a = '@assignment.outer', i = '@assignment.inner' },
+          ['/'] = treesitter_spec { a = '@comment.outer', i = '@comment.inner' },
         },
       }
     end,
@@ -34,11 +36,6 @@ return {
   {
     'echasnovski/mini.starter',
     event = 'VimEnter',
-    opts = {},
-  },
-  {
-    'echasnovski/mini.pairs',
-    event = 'InsertEnter',
     opts = {},
   },
 }

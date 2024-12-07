@@ -5,15 +5,11 @@ return { -- Autocompletion
     'onsails/lspkind.nvim',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
-    { 'zbirenbaum/copilot-cmp', dependencies = { 'zbirenbaum/copilot.lua' } },
   },
   config = function()
     -- See `:help cmp`
     local cmp = require 'cmp'
-    local copilot = require 'copilot_cmp'
     local lspkind = require 'lspkind'
-
-    copilot.setup()
 
     cmp.setup {
       completion = { completeopt = 'menu,menuone,noinsert' },
@@ -22,7 +18,6 @@ return { -- Autocompletion
         format = lspkind.cmp_format {
           mode = 'symbol_text',
           max_width = 50,
-          symbol_map = { Copilot = '' },
         },
       },
       -- For an understanding of why these mappings were
@@ -52,14 +47,11 @@ return { -- Autocompletion
           group_index = 0,
         },
         { name = 'nvim_lsp', group_index = 2 },
-        { name = 'copilot', group_index = 2 },
         { name = 'path', group_index = 2 },
       },
       sorting = {
         priority_weight = 2,
         comparators = {
-          require('copilot_cmp.comparators').prioritize,
-
           -- Below is the default comparitor list and order for nvim-cmp
           cmp.config.compare.offset,
           -- cmp.config.compare.scopes, --this is commented in nvim-cmp too

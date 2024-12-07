@@ -5,3 +5,4 @@ poetry = 'latest'
 python = '3.11'
 usage = 'latest'
 pnpm = "latest"
+rust = "1.83.0"
