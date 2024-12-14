@@ -38,4 +38,9 @@ return {
     event = 'VimEnter',
     opts = {},
   },
+  {
+    'echasnovski/mini.surround',
+    event = 'InsertEnter',
+    opts = {},
+  },
 }

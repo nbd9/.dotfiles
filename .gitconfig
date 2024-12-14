@@ -24,6 +24,7 @@
 [core]
 	excludesfile = ~/.dotfiles/.gitignore
 	editor = nvim
+	difftool = nvim
 	pager = delta
 
 [init]
@@ -40,3 +41,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[merge]
+	tool = nvimdiff

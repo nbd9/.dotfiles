@@ -1,11 +1,11 @@
 -- NOTE: required to import first, as it sets the base config & leader
-require 'nickthegroot.shared.options'
+require 'nickthegroot.options'
 
 -- [[ Keymaps & Autocommands ]]
 if not vim.g.vscode then
-  require 'nickthegroot.nvim.keymaps'
+  require 'nickthegroot.keymaps'
 end
-require 'nickthegroot.shared.autocmds'
+require 'nickthegroot.autocmds'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
@@ -21,28 +21,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- [[ Configure and install plugins ]]
 require('lazy').setup({
-  { import = 'nickthegroot.nvim.plugins', enabled = not vim.g.vscode },
-  { import = 'nickthegroot.shared.plugins' },
-}, {
-  ui = {
-    -- If you are using a Nerd Font: set icons to an empty table which will use the
-    -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
-    icons = vim.g.have_nerd_font and {} or {
-      cmd = '⌘',
-      config = '🛠',
-      event = '📅',
-      ft = '📂',
-      init = '⚙',
-      keys = '🗝',
-      plugin = '🔌',
-      runtime = '💻',
-      require = '🌙',
-      source = '📄',
-      start = '🚀',
-      task = '📌',
-      lazy = '💤 ',
-    },
-  },
+  { import = 'nickthegroot.plugins' },
 })
 
 -- The line beneath this is called `modeline`. See `:help modeline`

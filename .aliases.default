@@ -1,6 +1,15 @@
 alias c="code ."
 alias dc="docker compose"
 alias localip="ipconfig getifaddr en0"
+alias n="nvim"
+alias ld="lazydocker"
+alias lg="lazygit"
+
+# ls
+alias l="eza"
+alias ll="eza -l"
+alias la="eza -a"
+alias lla="eza -la"
 
 # Git
 alias amend="git commit --amend --no-edit"

@@ -2,11 +2,7 @@
 fish_vi_key_bindings
 
 # Setup brew libraries
-eval (/opt/homebrew/bin/brew shellenv fish)
-source /opt/homebrew/share/fish/config.fish
-
-# Setup iTerm
-source $HOME/.iterm2_shell_integration.fish
+/opt/homebrew/bin/brew shellenv fish | source
 
 # Source all exports
 for f in ~/.dotfiles/.exports.*
