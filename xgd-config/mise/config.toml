@@ -6,3 +6,5 @@ python = '3.11'
 usage = 'latest'
 pnpm = "latest"
 rust = "1.83.0"
+awscli = "2.22.17"
+uv = "0.5.9"

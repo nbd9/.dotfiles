@@ -21,8 +21,10 @@ shift + ctrl - 9: yabai -m window --space 9 --focus
 
 # common apps
 alt - return: open -a "Kitty"
+meh - return: open -a "Visual Studio Code"
 meh - space: open -a "Arc"
 meh - m: open -a "YouTube Music"
+meh - o: open -a "Obsidian"
 meh - s: open -a "Slack"
 meh - n: open -a "Notion"
 meh - c: open -a "Notion Calendar"

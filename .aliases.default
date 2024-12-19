@@ -5,6 +5,10 @@ alias n="nvim"
 alias ld="lazydocker"
 alias lg="lazygit"
 
+# common paths
+alias dt="cd ~/.dotfiles"
+alias dtn="dt && n && cd -"
+
 # ls
 alias l="eza"
 alias ll="eza -l"
